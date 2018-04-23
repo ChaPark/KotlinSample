@@ -12,11 +12,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         onClickListener()
-
     }
-
     private fun onClickListener() {
         sub_btn.setOnClickListener {
             Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show()
@@ -28,11 +25,13 @@ class MainActivity : AppCompatActivity() {
         anko_btn.setOnClickListener {
             startActivity(intentFor<AnkoActivity>())
         }
+        webview_activity.setOnClickListener{
+            startActivity(intentFor<WebViewActivity>())
+        }
+
+        test_activity.setOnClickListener{
+            startActivity(intentFor<TestActivity>())
+        }
     }
 
-
-    data class Person(val name: String,
-                      val email: String,
-                      val age: Int)
-    val john = Person("John", "John@gmail.com", 122)
 }

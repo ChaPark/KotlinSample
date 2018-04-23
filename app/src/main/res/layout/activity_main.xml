@@ -21,4 +21,17 @@
         android:textAllCaps="false"
         android:text="AnkoActivity"/>
 
+    <Button
+        android:id="@+id/webview_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="WebViewActivity"/>
+
+    <Button
+        android:id="@+id/test_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TestActivity"/>
+
 </LinearLayout>

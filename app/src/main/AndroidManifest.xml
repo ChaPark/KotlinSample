@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.corpark.kotlinsample">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".SubActivity" />
-        <activity android:name=".AnkoActivity"></activity>
+        <activity android:name=".AnkoActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".WebViewActivity"></activity>
     </application>
 
 </manifest>
